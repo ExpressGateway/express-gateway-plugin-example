@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'key-auth',
+  name: 'example',
   policy: (actionParams) => {
     return (req, res, next) => {
       // eslint-disable-next-line no-console

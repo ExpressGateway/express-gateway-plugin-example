@@ -1,8 +1,8 @@
 {
-  "name": "eg-example-plugin",
+  "name": "express-gateway-plugin-example",
   "version": "1.0.0",
   "description": "Plugin Example for Express Gateway",
-  "main": "index.js",
+  "main": "manifest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
