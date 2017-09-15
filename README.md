@@ -27,7 +27,7 @@ $ eg plugin install example
 Plugin installed!
 ```
 
-Detailed documentation:
+### Detailed documentation:
 
 [Express Gateway Overview](http://www.express-gateway.io/about/)
 
