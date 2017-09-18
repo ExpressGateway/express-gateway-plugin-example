@@ -3,8 +3,8 @@ module.exports = {
   init: function (pluginContext) {
     pluginContext.registerPolicy(require('./policies/example-policy'));
     pluginContext.registerCondition(require('./conditions/url-match'));
-    pluginContext.registerGatewayRoute(require('./gateway-routes/hello-eg'));
-    pluginContext.registerAdminRoute(require('./admin-routes/hello-admin'));
+    pluginContext.registerGatewayRoute(require('./routes/hello-eg'));
+    pluginContext.registerAdminRoute(require('./routes/hello-admin'));
 
     pluginContext.eventBus.on('hot-reload', function ({ type, newConfig }) {
       console.log('hot-reload', type, newConfig);
