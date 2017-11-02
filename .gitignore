@@ -1,0 +1,10 @@
+.vscode
+.idea
+node_modules/
+npm-debug.log
+example/keys/*.pem
+.DS_Store
+**/.DS_Store
+coverage
+.nyc_output
+coverage.lcov

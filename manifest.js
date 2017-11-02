@@ -1,5 +1,5 @@
 module.exports = {
-  version: '1.2.0',
+  version: '1.3.0',
   init: function (pluginContext) {
     pluginContext.registerPolicy(require('./policies/example-policy'));
     pluginContext.registerCondition(require('./conditions/url-match'));
@@ -20,7 +20,7 @@ module.exports = {
     });
   },
   policies:['example'], // this is for CLI to automatically add to "policies" whitelist in gateway.config
-  options: {  // This is for CLI to ask about params 'eg plugin configure example'
+  schema: {  // This is for CLI to ask about params 'eg plugin configure example'
     baseUrl: {
       title: 'Base Url',
       description: 'the base url to initialize',

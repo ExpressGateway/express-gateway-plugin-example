@@ -2,8 +2,18 @@ module.exports = {
   name: 'example',
   policy: (actionParams) => {
     return (req, res, next) => {
-      // eslint-disable-next-line no-console
-      console.log('executing policy-from-example-plugin with params', actionParams);
-    };
+      console.log('executing policy example with params', actionParams)
+    }
+  },
+  schema: { // This is for Admin API to validate params
+    type: 'object',
+    properties: {
+      url: {
+        title: 'url',
+        description: 'the url to initialize',
+        type: 'string',
+        required: false
+      }
+    }
   }
-};
+}
